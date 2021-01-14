@@ -1,0 +1,90 @@
+                        Workshops_C
+
+STEP 2_1
+
+#include <stdio.h>
+#include <conio.h>
+
+
+int bool = 0 ;
+int main ()
+
+
+{
+int a ,b ;
+printf("Saisir la valeur de a :");
+scanf("%d",&a);
+printf("Saisir la valeur de b :");
+scanf("%d",&b);
+if (a>b)
+bool = 1 ;
+
+else if (a<b)
+bool = 0 ;
+if (bool = 1)
+printf("true");
+else if (bool = 0)
+printf("false");
+
+}
+
+
+STEP 2_2
+
+#include <stdio.h>
+#include <conio.h>
+
+int main ()
+
+{
+char letter ;
+float num1, num2 ;
+printf("what operation do you want to
+do?\n\tA)Addition\n\tB)subtraction\n\tC)multiplication\n\tD)divistion\n");
+scanf("%c",&letter);
+
+printf("enter a number:");
+scanf("%f",&num1);
+printf("enter a second number:");
+scanf("%f",&num2);
+if (letter == 'A'|| letter == 'a')
+printf("the sum of %.2f and %.2f is %.2f" , num1, num2, num1 + num2);
+else if (letter =='B' || letter == 'b')
+printf("the sub of %.2F and %.2f is %.2f ", num1, num2, num1 - num2);
+else if (letter == 'C'|| letter == 'c')
+printf("the multi of %.2F and %.2f is %.2f ", num1, num2, num1 * num2);
+else if (letter =='D' || letter == 'd')
+printf("the div of %.2F and %.2f is %.2f ", num1, num2, num1 / num2);
+else
+printf("you entered an onvalid character");
+return 0;
+}
+
+
+STEP 3_3
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    float a,b,c,delta,x,x1,x2 ;
+       printf("Entrez les valeurs de a, b et c : ");
+       scanf("%f %f %f",&a,&b,&c);
+       delta = pow(-b,2)-(4*a*c);
+    if (delta < 0)
+       printf("pas de solutions reelles");
+    else if (delta == 0){
+        x = (-b)/(2*a);
+        printf("la solution est : %.2f",x);
+        }
+    else {
+        x1 = (-b-sqrt(delta))/(2*a);
+        x2 = (-b+sqrt(delta))/(2*a);
+        printf("les solutions sont : %.2 et %.2",x1,x2);
+         }
+
+
+
+    return 0;
+}
